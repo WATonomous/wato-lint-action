@@ -409,9 +409,9 @@ With `auto_fix` set to `true`, by default the action will try and fix code issue
 
 - **`commit`:** Whether to commit and push the changes made by `auto_fix`. Default: `true`
 
-- **`git_name`**: Username for auto-fix commits. Default: `"Lint Action"`
+- **`git_name`**: Username for auto-fix commits. Default: `"WATonomousAdmin"`
 
-- **`git_email`**: Email address for auto-fix commits. Default: `"lint-action@samuelmeuli.com"`
+- **`git_email`**: Email address for auto-fix commits. Default: `"admin@watonomous.ca"`
 
 - **`git_no_verify`**: Bypass the pre-commit and pre-push git hooks. Default: `false`
 
@@ -464,7 +464,7 @@ There are currently some limitations as to how this action (or any other action)
 
 If `auto_fix` is enabled and the default `GITHUB_TOKEN` is used, none of the linters should be allowed to change files in `.github/workflows` as the token doesn't have the necessary `workflow` permission. This can be achieved by adding the directory to the ignore config of the used linter. [Source](https://github.community/t/github-linting-remote-rejected/121365)
 
-For details and comments, please refer to [#65](https://github.com/wearerequired/lint-action/issues/65) and [#74](https://github.com/wearerequired/lint-action/issues/74).
+For details and comments, please refer to [#65](https://github.com/WATonomous/wato-lint-action/issues/65) and [#74](https://github.com/WATonomous/wato-lint-action/issues/74).
 
 <br>
 
